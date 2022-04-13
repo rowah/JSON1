@@ -72,11 +72,4 @@ async function populate() {
   //Finally, we need to call our top-level populate() function:
   populate();
 
-
-
-
-  //The above code was simple in terms of accessing the JavaScript object, because we converted the network response directly into a JavaScript object using response.json().
-  //But sometimes we aren't so lucky — sometimes we receive a raw JSON string, and we need to convert it to an object ourselves. And when we want to send a JavaScript object across the network, we need to convert it to JSON (a string) before sending. Luckily, these two problems are so common in web development that a built-in JSON object is available in browsers, which contains the following two methods:
-        //parse(): Accepts a JSON string as a parameter, and returns the corresponding JavaScript object.
-        //stringify(): Accepts an object as a parameter, and returns the equivalent JSON string.
   
